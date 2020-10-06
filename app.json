@@ -1,0 +1,32 @@
+{
+    "apps": [
+        {
+            "name": "AUTH-SERVICE",
+            "script": "../CL-Boot-Server-Auth/server.js",
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "ACCOUNT-ACTIVATION-SERVICE",
+            "script": "../CL-Boot-Server-AccountActivation/server.js",
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "AUTH-REGISTER-SERVICE",
+            "script": "../CL-Boot-Server-AuthRegister/server.js",
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "PASSWORD-RECOVERY-SERVICE",
+            "script": "../CL-Boot-Server-PasswordRecovery/server.js",
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        }
+    ]
+}
