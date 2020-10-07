@@ -1,29 +1,41 @@
 {
     "apps": [
         {
-            "name": "AUTH-SERVICE",
-            "script": "../CL-Boot-Server-Auth/server.js",
+            "name": "OAUTH-SERVICE",
+            "script": "../OAUTH-SERVICE/server.js",
+            "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
         },
         {
             "name": "ACCOUNT-ACTIVATION-SERVICE",
-            "script": "../CL-Boot-Server-AccountActivation/server.js",
+            "script": "../ACCOUNT-ACTIVATION-SERVICE/server.js",
+            "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
         },
         {
-            "name": "AUTH-REGISTER-SERVICE",
-            "script": "../CL-Boot-Server-AuthRegister/server.js",
+            "name": "OAUTH-REGISTER-SERVICE",
+            "script": "../OAUTH-REGISTER-SERVICE/server.js",
+            "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
         },
         {
             "name": "PASSWORD-RECOVERY-SERVICE",
-            "script": "../CL-Boot-Server-PasswordRecovery/server.js",
+            "script": "../PASSWORD-RECOVERY-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "CREATE-PROJECT-SERVICE",
+            "script": "../CREATE-PROJECT-SERVICE/server.js",
+            "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
