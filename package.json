@@ -16,5 +16,10 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-standard": "^4.0.1",
     "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "pm2-server-monitor": "^1.0.0",
+    "request": "^2.88.2"
   }
 }

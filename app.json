@@ -9,16 +9,16 @@
             "node_args": "--max_old_space_size=8192"
         },
         {
-            "name": "ACCOUNT-ACTIVATION-SERVICE",
-            "script": "../ACCOUNT-ACTIVATION-SERVICE/server.js",
+            "name": "OAUTH-REGISTER-SERVICE",
+            "script": "../OAUTH-REGISTER-SERVICE/server.js",
             "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
         },
         {
-            "name": "OAUTH-REGISTER-SERVICE",
-            "script": "../OAUTH-REGISTER-SERVICE/server.js",
+            "name": "ACCOUNT-ACTIVATION-SERVICE",
+            "script": "../ACCOUNT-ACTIVATION-SERVICE/server.js",
             "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
@@ -33,8 +33,136 @@
             "node_args": "--max_old_space_size=8192"
         },
         {
-            "name": "CREATE-PROJECT-SERVICE",
-            "script": "../CREATE-PROJECT-SERVICE/server.js",
+            "name": "PROJECT-CREATE-SERVICE",
+            "script": "../PROJECT-CREATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "PROJECTS-SELECT-SERVICE",
+            "script": "../PROJECTS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "PROJECT-UPDATE-SERVICE",
+            "script": "../PROJECT-UPDATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "PROJECTS-DELETE-SERVICE",
+            "script": "../PROJECTS-DELETE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "FOLDER-CREATE-SERVICE",
+            "script": "../FOLDER-CREATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "FOLDERS-SELECT-SERVICE",
+            "script": "../FOLDERS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "FOLDER-UPDATE-SERVICE",
+            "script": "../FOLDER-UPDATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "FOLDERS-DELETE-SERVICE",
+            "script": "../FOLDERS-DELETE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "ELEMENTS-CREATE-SERVICE",
+            "script": "../ELEMENTS-CREATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "ELEMENTS-SELECT-SERVICE",
+            "script": "../ELEMENTS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "ELEMENT-UPDATE-SERVICE",
+            "script": "../ELEMENT-UPDATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "ELEMENTS-DELETE-SERVICE",
+            "script": "../ELEMENTS-DELETE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "DATAS-CREATE-SERVICE",
+            "script": "../DATAS-CREATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "DATAS-SELECT-SERVICE",
+            "script": "../DATAS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "DATA-UPDATE-SERVICE",
+            "script": "../DATA-UPDATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "DATAS-DELETE-SERVICE",
+            "script": "../DATAS-DELETE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "ADD-TO-FOLDER-SERVICE",
+            "script": "../ADD-TO-FOLDER-SERVICE/server.js",
             "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
