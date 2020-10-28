@@ -167,6 +167,38 @@
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "FORLDER-CHILD-CREATE-SERVICE",
+            "script": "../FORLDER-CHILD-CREATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "FILES-UPLOAD-SERVICE",
+            "script": "../FILES-UPLOAD-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "ADD-USER-SERVICE",
+            "script": "../ADD-USER-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "USERS-SELECT-SERVICE",
+            "script": "../USERS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
         }
     ]
 }
