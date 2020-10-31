@@ -199,6 +199,70 @@
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "CONTACT-CREATE-SERVICE",
+            "script": "../CONTACT-CREATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "CONTACTS-SELECT-SERVICE",
+            "script": "../CONTACTS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "AUDIOS-SELECT-SERVICE",
+            "script": "../AUDIOS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "IMAGES-SELECT-SERVICE",
+            "script": "../IMAGES-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "VIDEOS-SELECT-SERVICE",
+            "script": "../VIDEOS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "PROGRAMS-SELECT-SERVICE",
+            "script": "../PROGRAMS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "DOCUMENTS-SELECT-SERVICE",
+            "script": "../DOCUMENTS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "OTHERS-FILES-SELECT-SERVICE",
+            "script": "../OTHERS-FILES-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
         }
     ]
 }
