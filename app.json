@@ -257,8 +257,16 @@
             "node_args": "--max_old_space_size=8192"
         },
         {
-            "name": "OTHERS-FILES-SELECT-SERVICE",
-            "script": "../OTHERS-FILES-SELECT-SERVICE/server.js",
+            "name": "OTHER-FILES-SELECT-SERVICE",
+            "script": "../OTHER-FILES-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "COMPRESSED-FILES-SELECT-SERVICE",
+            "script": "../COMPRESSED-FILES-SELECT-SERVICE/server.js",
             "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
