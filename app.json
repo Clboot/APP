@@ -271,6 +271,14 @@
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "CONTACT-UPDATE-SERVICE",
+            "script": "../CONTACT-UPDATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
         }
     ]
 }
