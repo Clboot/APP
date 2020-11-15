@@ -185,8 +185,8 @@
             "node_args": "--max_old_space_size=8192"
         },
         {
-            "name": "ADD-USER-SERVICE",
-            "script": "../ADD-USER-SERVICE/server.js",
+            "name": "USER-ADD-SERVICE",
+            "script": "../USER-ADD-SERVICE/server.js",
             "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
@@ -283,6 +283,14 @@
         {
             "name": "FOLDER-CHILDREN-DELETE-SEVRICE",
             "script": "../FOLDER-CHILDREN-DELETE-SEVRICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "USERS-REMOVE-SERVICE",
+            "script": "../USERS-REMOVE-SERVICE/server.js",
             "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
