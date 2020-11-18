@@ -169,14 +169,6 @@
             "node_args": "--max_old_space_size=8192"
         },
         {
-            "name": "FORLDER-CHILD-CREATE-SERVICE",
-            "script": "../FORLDER-CHILD-CREATE-SERVICE/server.js",
-            "watch": true,
-            "exec_mode": "cluster",
-            "instances": 1,
-            "node_args": "--max_old_space_size=8192"
-        },
-        {
             "name": "FILES-UPLOAD-SERVICE",
             "script": "../FILES-UPLOAD-SERVICE/server.js",
             "watch": true,
@@ -299,6 +291,14 @@
         {
             "name": "CONTACTS-DELETE-SERVICE",
             "script": "../CONTACTS-DELETE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "FOLDER-CHILD-CREATE-SERVICE",
+            "script": "../FOLDER-CHILD-CREATE-SERVICE/server.js",
             "watch": true,
             "exec_mode": "cluster",
             "instances": 1,
