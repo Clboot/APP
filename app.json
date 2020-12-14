@@ -367,6 +367,22 @@
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "USER-UPDATE-SERVICE",
+            "script": "../USER-UPDATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "FILES-DELIVERY-SERVICE",
+            "script": "../FILES-DELIVERY-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
         }
     ]
 }
