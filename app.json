@@ -383,6 +383,14 @@
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "MAIL-SENDER-SERVICE",
+            "script": "../MAIL-SENDER-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
         }
     ]
 }
