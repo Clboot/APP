@@ -391,6 +391,38 @@
             "exec_mode": "cluster",
             "instances": 1,
             "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "PLANS-SELECT-SERVICE",
+            "script": "../PLANS-SELECT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "BILLS-SERVICE",
+            "script": "../BILLS-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "PAYMENT-SERVICE",
+            "script": "../PAYMENT-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
+        },
+        {
+            "name": "PLAN-CREATE-SERVICE",
+            "script": "../PLAN-CREATE-SERVICE/server.js",
+            "watch": true,
+            "exec_mode": "cluster",
+            "instances": 1,
+            "node_args": "--max_old_space_size=8192"
         }
     ]
 }
